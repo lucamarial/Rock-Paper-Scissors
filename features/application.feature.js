@@ -1,6 +1,6 @@
 require('../spec.helper');
 
-context('Your Description of the test scenario', () => {
+context('User can make a choice between Rock, Paper or Scissors', () => {
   before(async () => {
     await browser.init()
     await browser.visitPage('http://localhost:8080/')
@@ -14,7 +14,18 @@ context('Your Description of the test scenario', () => {
     browser.close();
   });
 
-  it('renders the correct page title', async () => {
-    expect(await browser.page.title()).to.eql('Puppeteer Mocha Scaffold');
+  it('renders the Rock button', async () => {
+    let button = await browser.getContent("[Id='r']")
+    expect(button).to.eql('Rock');
+  });
+
+  it('renders the Paper button', async () => {
+    let button = await browser.getContent("[Id='p']")
+    expect(button).to.eql('Paper');
+  });
+
+  it('renders the Scissors button', async () => {
+    let button = await browser.getContent("[Id='s']")
+    expect(button).to.eql('Scissors');
   });
 });
