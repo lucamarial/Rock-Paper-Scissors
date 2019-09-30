@@ -4,11 +4,11 @@ describe('Rock-Paper-Scissor Game', () => {
 
     describe('smoke tests', () => {
         it('should exist', () => {
-            expect(RockPaperScissor).to.exist;
+            expect(RockPaperScissors).to.exist;
         })
 
         it('should be a function', () => {
-            expect(RockPaperScissor).to.be.a('function');
+            expect(RockPaperScissors).to.be.a('function');
         })
     })
 })
