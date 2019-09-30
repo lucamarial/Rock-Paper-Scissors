@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(165, 204, 250);
+  background-image: url('https://thechurchco-production.s3.amazonaws.com/uploads/sites/758/2019/03/111348-watercolor-backgrounds-1920x1280-high-resolution-1688x1125.jpg');
+  background-size: cover;
 }
 
 * {
@@ -14,7 +15,8 @@ header {
 }
 
 header > h1 {
-  color: rgb(35, 93, 148);
+  color: rgb(99, 63, 184);
+  font-size: 40px;
   text-align: center;
   font-family: Arial;
 }
@@ -30,10 +32,16 @@ header > h1 {
 
 .choices {
   margin: 50px 0;
+  margin-top: 250px;
   text-align: center;
 }
 
-.choice {
-  margin: 0 50px;
+.choice.ui.inverted.yellow.button {
+  margin: 0 20px;
+}
 
+.ui.button {
+  line-height: 40px;
+  font-size: 20px;
+  width: 200px;
 }
