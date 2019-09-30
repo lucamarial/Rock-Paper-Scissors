@@ -5,9 +5,23 @@ const scissors_button = document.getElementById("s");
 
 
 function computerChoice() {
-  const choices = ['rock', 'paper', 'scissor'];
+  const choices = ['rock', 'paper', 'scissors'];
   const randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
+}
+
+const main = () => {
+  rock_button.addEventListener('click', function() {
+    RockPaperScissors("rock");
+  })
+
+  paper_button.addEventListener('click', function() {
+    RockPaperScissors("paper");
+  })
+
+  scissors_button.addEventListener('click', function() {
+    RockPaperScissors("scissors");
+  })
 }
 
 function RockPaperScissors(choiceOne) {
@@ -18,7 +32,7 @@ function RockPaperScissors(choiceOne) {
   };
   
   if(choiceOne === 'rock'){
-    if(choiceTwo === 'scissor'){
+    if(choiceTwo === 'scissors'){
     return win(choiceOne, choiceTwo)
     }
     else{
@@ -35,7 +49,7 @@ function RockPaperScissors(choiceOne) {
     }
   };
 
-  if(choiceOne === 'scissor'){
+  if(choiceOne === 'scissors'){
     if(choiceTwo === 'paper'){
       return win(choiceOne, choiceTwo)
     }
