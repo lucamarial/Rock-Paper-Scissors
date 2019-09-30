@@ -23,6 +23,7 @@ const main = () => {
     RockPaperScissors("scissors");
   })
 }
+console.log(main())
 
 function win(user, computer) {
   result_div.innerHTML = `${user} beats ${computer}. You win!`

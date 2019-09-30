@@ -1,6 +1,6 @@
 require('../spec.helper');
 
-context('User can make a choice between Rock, Paper or Scissors', () => {
+describe('User can make a choice between Rock, Paper or Scissors', () => {
   before(async () => {
     await browser.init()
     await browser.visitPage('http://localhost:8080/')
