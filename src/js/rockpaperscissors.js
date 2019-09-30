@@ -24,6 +24,14 @@ const main = () => {
   })
 }
 
+function win(user, computer) {
+  result_div.innerHTML = `${user} beats ${computer}. You win!`
+}
+
+function lose(user, computer) {
+  result_div.innerHTML = `${computer} beats ${user}. You lose!`
+}
+
 function RockPaperScissors(choiceOne) {
   const choiceTwo = computerChoice();
   
