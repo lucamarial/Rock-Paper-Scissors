@@ -15,16 +15,16 @@ To play the game
 I would like to play against the computer  
 
 As a user  
-If i play rock and the computer plays scissors  
-I should win the game and i should lose if the choices were opposite  
+If I play rock and the computer plays scissors  
+I should win the game and I should lose if the choices were opposite  
 
 As a user  
-If i play paper and the computer plays rock  
-I should win the game and i should lose if the choices were opposite  
+If I play paper and the computer plays rock  
+I should win the game and I should lose if the choices were opposite  
 
 As a user  
-If i play scissors and the computer plays paper  
-I should win the game and i should lose if the choices were opposite  
+If I play scissors and the computer plays paper  
+I should win the game and I should lose if the choices were opposite  
 
 As a user  
 After I made my decision  

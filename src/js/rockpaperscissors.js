@@ -1,3 +1,15 @@
+let result_div = document.querySelector(".result");
+const rock_button = document.getElementById("r");
+const paper_button = document.getElementById("p");
+const scissors_button = document.getElementById("s");
+
+
+function computerChoice() {
+  const choices = ['rock', 'paper', 'scissor'];
+  const randomNumber = Math.floor(Math.random() * 3);
+  return choices[randomNumber];
+}
+
 function RockPaperScissors(choiceOne) {
   const choiceTwo = computerChoice();
   
