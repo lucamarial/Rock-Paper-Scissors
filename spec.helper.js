@@ -3,3 +3,7 @@ const BrowserHelpers = require('e2e_training_wheels')
 global.browser = new BrowserHelpers()
 global.expect = chai.expect;
 global.RockPaperScissors = require('./src/js/gamelogic')
+global.computerChoice = require('./src/js/gamelogic')
+// global.win = require('./src/js/gamelogic')
+// global.lose = require('./src/js/gamelogic')
+// global.tie = require('./src/js/gamelogic')

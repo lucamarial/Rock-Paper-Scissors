@@ -2,12 +2,12 @@ function RockPaperScissors(choiceOne) {
   const choiceTwo = computerChoice();
   
   if(choiceOne === choiceTwo){
-  return 'tie' && tie(choiceOne, choiceTwo)
+    return tie(choiceOne, choiceTwo)
   };
   
   if(choiceOne === 'rock'){
     if(choiceTwo === 'scissors'){
-    return win(choiceOne, choiceTwo)
+      return win(choiceOne, choiceTwo)
     }
     else{
       return lose(choiceOne, choiceTwo)
@@ -57,4 +57,8 @@ function tie(user, computer) {
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = RockPaperScissors;
+  module.exports = computerChoice;
+  // module.exports = win;
+  // module.exports = lose;
+  // module.exports = tie;
 }

@@ -22,8 +22,4 @@ const main = () => {
 }
 console.log(main())
 
-// if (typeof module !== 'undefined' && module.exports) {
-//   module.exports = RockPaperScissors;
-// }
-
 

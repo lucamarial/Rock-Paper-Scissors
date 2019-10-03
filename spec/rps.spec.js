@@ -1,7 +1,9 @@
 require('../spec.helper')
+// const mockMath = Object.create(global.Math);
+// mockMath.random = () => .5; 
+// global.Math = mockMath;
 
 describe('Rock-Paper-Scissor Game', () => {
-    // let rps = new RockPaperScissors
 
     describe('smoke tests', () => {
         it('should exist', () => {
@@ -13,16 +15,17 @@ describe('Rock-Paper-Scissor Game', () => {
         })
     })
 
-    // it('randomly assigns computer selection', () => {
-    //     let choice = ['rock', 'paper', 'scissors']
-    //     expect(computerChoice()).to.eql(choice)
-    // })
+    it('randomly assigns computer selection', () => {
+        let comp = computerChoice()
+        let choice = ['rock', 'paper', 'scissors']
+        expect(choice).to.include(comp)
+    })
   
     // it('should return tie', () => {
     //     expect(RockPaperScissors('paper')).to.eql('tie')
     // })
     
     // it('should return rock wins', () => {
-    //     expect(RockPaperScissors('rock', 'scissor')).to.eql('rock beats scissor! You win!')
+    //     expect(RockPaperScissors('paper')).to.eql()
     // })
 })
