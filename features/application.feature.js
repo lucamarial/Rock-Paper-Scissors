@@ -28,4 +28,11 @@ describe('User can make a choice between Rock, Paper or Scissors', () => {
     let button = await browser.getContent("[Id='s']")
     expect(button).to.eql('Scissors');
   });
+
+  it('shows a result', async () => {
+    await browser.clickOnButton("button[Id='p']")
+    let content = await browser.getContent("[class='result']")
+    let choices = ['The result is a tie!', 'paper beats rock. You win!', 'scissors beats paper. You lose!']
+    expect(choices).to.include(content)
+  })
 });

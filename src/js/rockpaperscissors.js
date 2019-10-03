@@ -7,13 +7,6 @@ let compScore = 0;
 const userScore_span = document.getElementById("user-score");
 const compScore_span = document.getElementById("comp-score");
 
-
-function computerChoice() {
-  const choices = ['rock', 'paper', 'scissors'];
-  const randomNumber = Math.floor(Math.random() * 3);
-  return choices[randomNumber];
-}
-
 const main = () => {
   rock_button.addEventListener('click', function() {
     RockPaperScissors("rock");
@@ -29,15 +22,8 @@ const main = () => {
 }
 console.log(main())
 
-function win(user, computer) {
-  userScore++;
-  userScore_span.innerHTML = userScore;
-  result_div.innerHTML = `${user} beats ${computer}. You win!`
-}
+// if (typeof module !== 'undefined' && module.exports) {
+//   module.exports = RockPaperScissors;
+// }
 
-function lose(user, computer) {
-  compScore++;
-  compScore_span.innerHTML = compScore;
-  result_div.innerHTML = `${computer} beats ${user}. You lose!`
-}
 

@@ -2,7 +2,7 @@ function RockPaperScissors(choiceOne) {
   const choiceTwo = computerChoice();
   
   if(choiceOne === choiceTwo){
-  return result_div.innerHTML = "The result is a tie!"
+  return 'tie' && tie(choiceOne, choiceTwo)
   };
   
   if(choiceOne === 'rock'){
@@ -32,6 +32,28 @@ function RockPaperScissors(choiceOne) {
     }
   }
 };
+
+function computerChoice() {
+  const choices = ['rock', 'paper', 'scissors'];
+  const randomNumber = Math.floor(Math.random() * 3);
+  return choices[randomNumber];
+}
+
+function win(user, computer) {
+  userScore++;
+  userScore_span.innerHTML = userScore;
+  result_div.innerHTML = `${user} beats ${computer}. You win!`
+}
+
+function lose(user, computer) {
+  compScore++;
+  compScore_span.innerHTML = compScore;
+  result_div.innerHTML = `${computer} beats ${user}. You lose!`
+}
+
+function tie(user, computer) {
+  result_div.innerHTML = "The result is a tie!"
+}
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = RockPaperScissors;
