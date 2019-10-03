@@ -1,18 +1,31 @@
 require('../spec.helper')
+// const mockMath = Object.create(global.Math);
+// mockMath.random = () => .5; 
+// global.Math = mockMath;
 
-describe('Your test case description', () => {
-    // Setup
-    let array
+describe('Rock-Paper-Scissor Game', () => {
 
-    beforeEach(() => {
-        // assign values to your variables
-        array = new Array(2, 3)
-    });
+    describe('smoke tests', () => {
+        it('should exist', () => {
+            expect(RockPaperScissors).to.exist;
+        })
 
-    it('add a descriptive test title', () => {
-        // Execute code if needed
-        const sum = array[0] + array[1]
-        // add an assertion using the `expect` keyword
-        expect(sum).to.eql(5)
+        it('should be a function', () => {
+            expect(RockPaperScissors).to.be.a('function');
+        })
     })
+
+    it('randomly assigns computer selection', () => {
+        let comp = computerChoice()
+        let choice = ['rock', 'paper', 'scissors']
+        expect(choice).to.include(comp)
+    })
+  
+    // it('should return tie', () => {
+    //     expect(RockPaperScissors('paper')).to.eql('tie')
+    // })
+    
+    // it('should return rock wins', () => {
+    //     expect(RockPaperScissors('paper')).to.eql()
+    // })
 })
