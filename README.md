@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors application
 * Created by Luca Lobacher 
-* Deployed with Netlify
+* Deployed with [Netlify](https://rps-lm.netlify.com/)
 * Tested with npm
 
 ## What the code does
@@ -79,3 +79,6 @@ As a user
 After I made my decision  
 I would like to see the computer's choice and an output of who won  
 ```
+
+## References
+Writing my code I got inspired by [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0) and a post on [codecademy](https://www.codecademy.com/forum_questions/50be9a6f9f1fcd5cb60000dc).
